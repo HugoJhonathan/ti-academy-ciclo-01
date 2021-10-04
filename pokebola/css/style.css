@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.centralizado-hv {
+    justify-content: center;
+    align-items: center;
+}
+
+html,
+body {
+    height: 100%;
+    /* Solução para não haver scroll em smartphones, pois com
+    o 100vh estava com scroll, pois o navegador tem a barra superior da url,
+    assim aumentando viewboard e criando um scroll na vertical indesejado*/
+    width: 100vw;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    overflow: hidden;
+    /* Remover scroll */
+}
+
+main .container .box-pokebola {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 5px 2px 8px rgb(97, 97, 97);
+    position: relative;
+    flex-direction: column;
+}
+
+main .container .box-pokebola .parte-superior {
+    height: 50%;
+    width: 100%;
+    background-color: #e12f34;
+    border-radius: 130px 130px 0 0;
+    border: 6px solid black;
+    border-bottom: 3px solid black;
+}
+
+main .container .box-pokebola .parte-inferior {
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 130px 130px;
+    border: 6px solid black;
+    border-top: 3px solid black;
+}
+
+main .container .box-pokebola .circulo-central {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid black;
+}
+
+main .container .box-pokebola .circulo-central .circulo-central-branco {
+    width: 75%;
+    height: 75%;
+    background-color: rgb(248, 248, 248);
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+main .container .txt {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+main .container:hover {
+    cursor: not-allowed;
+}
+
+main .container:hover .pikachu {
+    display: block;
+}
+
+main .container {
+    flex-direction: column;
+}
+
+main .container:hover .txt {
+    display: none;
+}
+
+main .container .pikachu {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    display: none;
+    margin-bottom: 30px;
+    animation: shake 0.7s;
+    animation-iteration-count: infinite;
+}
+
+main .container .pikachu figure img {
+    width: 100%;
+}
+
+main .container .pikachu figure figcaption {
+    font-size: 1.2rem;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(-0deg);
+    }
+}

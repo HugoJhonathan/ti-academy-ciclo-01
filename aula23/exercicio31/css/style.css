@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main,
+header,
+footer {
+    width: 80%;
+    background-color: darkgoldenrod;
+}
+
+main {
+    height: auto;
+    margin: 10px auto 10px auto;
+}
+
+header {
+    height: 60px;
+    margin: 10px auto 10px auto;
+}
+
+footer {
+    height: auto;
+    margin: 0 auto;
+    background-color: green;
+    padding: 10px;
+}
+
+.ajusteTamanho {
+    height: 30vh;
+    background-color: red;
+}
+
+.content-card div,
+footer>div {
+    background-color: black;
+    height: 200px;
+    width: 48%;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-bt {
+    justify-content: space-between;
+}
+
+section {
+    margin: 10px 0px;
+    background-color: pink;
+}
+
+@media screen and (max-width:700px) {
+    section,
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+    .content-card div,
+    footer>div {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

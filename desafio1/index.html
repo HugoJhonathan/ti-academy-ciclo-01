@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio 1</title>
+</head>
+<script>
+    function showSideMenu(x) {
+        document.getElementById("list-menu").classList.toggle('mobile-menu-show');
+        let txtButtonSide = document.getElementById("open-mobile-menu").innerText;
+        x.innerText = txtButtonSide == 'menu' ? 'close' : 'menu';
+    }
+</script>
+
+<body>
+    <header>
+        <div class="header_center">
+            <h1 class="logo">LOGO</h1>
+
+            <nav id="menu" class="flex">
+
+                <ul id="list-menu" class="flex">
+                    <li class=" item">
+                        <a class="flex go active" href="#">Home</a>
+                    </li>
+                    <li class=" item">
+                        <a class="flex go" href="#">Contato</a>
+                    </li>
+                    <li class=" item">
+                        <a class="flex go" href="#">Sobre</a>
+                    </li>
+                </ul>
+
+                <span id="open-mobile-menu" class="material-icons flex" onclick="showSideMenu(this)">
+                    menu
+                    </span>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section id="box-principal" class="flex">
+            <div id="box-frase" class="flex">
+                <p>
+                    "Lorem ipsum dolor sit amet, consecter adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+            </div>
+            <div id="box-email" class="flex">
+                <form action="" method="POST">
+                    <label for="email">
+                    <input required autocomplete="off" placeholder="Digite seu e-mail" type="email" name="email" id="email">
+                </label>
+                    <div id="box-btn-submit">
+                        <button type="submit" class="flex" id="btn-submit" value="Enviar">
+                            Enviar
+                        <span class="material-icons">
+                            send
+                            </span></button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>by TI-ACADEMY</h2>
+    </footer>
+
+</body>
+
+</html>

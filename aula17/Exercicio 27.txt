@@ -1,0 +1,30 @@
+Exercicio 27
+
+1. Como podemos definir uma URL, dê um exemplo.
+2. O que é o HTTP?
+3. O que são vendors em CSS?
+
+Quest 1- R: Uma URL é um conjunto de elementos que contém o domínio e o
+diretório de arquivos de um determinado site, é através da URL que 
+conseguimos acessar paginas específicas de cada site.
+
+Quest 2- R: HTTP é um protocolo de comunicação entre o navegador
+e o servidor de páginas na internet, webserver.
+
+Quest 3- R: Vendors são prefixos criados pelos navegadores mais famosos
+para testar funcionalidades do CSS que.
+
+--------------
+Exercicio 28
+
+1. Como é possível descobrir qual é a fonte padrão de renderização do navegador?
+2. É verdade que quando alteramos um CSS diretametne no DEV TOOL
+automaticamente alteramos o arquivo CSS? 
+
+
+Quest 1- R: Para descobrir a fonte padrão de utilização do navegador
+basta abrir o DevTools (apertando f12), e acessar a aba "Computed".
+
+Quest 2- R: Não, quando fazemos qualquer alteração no CSS pelo DevTools
+não altera nada no arquivo original, apenas altera no memento, e quando
+atualizamos a pagina toda alteração é perdida.

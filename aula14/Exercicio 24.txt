@@ -1,0 +1,24 @@
+Exercicio 24
+
+1. O que a propriedade CSS padding irá proporcionar em um elemento HTML?
+2. É verdade que todos os elementos HTML possuem por padrão a propriedade position
+no estado STICKY?
+3. Qual é a vantagem de utilizar o atributo ALT em um elemento <img>
+
+Quest 1- R: A propriedade padding do CSS proporciona para 
+o elemento um preenchimento interno, como se fosse
+uma margem interna, limitando o seu conteudo à sua
+borda, e pode ser aplicado
+em todos os lados, ou para cada lado individual.
+
+Quest 2- R: Não, nenhum elemento HTML possui por padrão
+a propriedade position no estado sticky, e sim static.
+
+Quest 3- R: A vantagem de se utilizar alt é de no caso Não ser
+possivel carregar a imagem na tela, aparecerá o que foi definido em
+alt, mostrando o que deveria ter aparecido. Auxilia também em casos
+de alguma ferramenta que faz a leitura do site para pessoa com deficiencia visual,
+onde será possível fazer a leitura em voz alta do site, assim, tendo o alt, será
+possível transmitir o que a imagem retrata em forma de texto. 
+E também o fato dos mecanismos de busca dos navegadores conseguirem
+identificar do que se trata a imagem inserida em questão.

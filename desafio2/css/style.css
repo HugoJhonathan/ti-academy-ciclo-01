@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ :root {
+    --font-principal: Verdana;
+}
+
+.flex {
+    display: flex;
+}
+
+html {
+    width: 100vw;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+
+header#header-top {
+    background: linear-gradient(to right, #3865fc, #2390f3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-principal);
+    position: relative;
+}
+
+header#header-top h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+header#header-top h2 {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+header#header-top>#icone {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+header#header-top>#icone .material-icons {
+    color: #2295f0;
+    font-size: 1em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main #box {
+    margin: 80px 10px;
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 6px #cacaca;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+main #box #form-endedeco {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-principal);
+}
+
+main #box #form-endedeco label {
+    width: 100%;
+    margin-top: 5px;
+}
+
+main #box #form-endedeco>input[type="text"] {
+    height: 38px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid black;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+main #box #form-endedeco>input[type="text"]:focus {
+    border: 1px solid #2196f3;
+}
+
+main #box #form-endedeco>input[type="submit"] {
+    background-color: #2196f3;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #0549a3;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+main #box #form-endedeco>input[type="submit"]:active {
+    border: none;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:800px) {
+    main #box {
+        width: 100%;
+        margin: 40px 10px;
+    }
+    body {
+        grid-template-rows: 120px 1fr;
+    }
+    header#header-top>#icone {
+        width: 70px;
+        height: 70px;
+        bottom: -35px;
+        font-size: 60px;
+    }
+}

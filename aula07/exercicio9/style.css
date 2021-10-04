@@ -1,0 +1,13 @@
+#divCentral{
+    width:200px;
+    height:200px;
+    margin:0 auto;
+    background-color: tomato;
+    border:2px solid black;
+}
+#paragrafo{
+    width:300px;
+    height:auto;
+    border:1px solid green;
+    padding:15px;
+}

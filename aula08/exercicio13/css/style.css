@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+div{
+    width:300px;
+    height:300px;
+    border:1px solid black;
+}
+#div1{
+    background-color:rgb(0, 180, 0);
+}
+#div2{
+    background-color:rgba(0, 180, 0, 0.5);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 21</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            margin: 50px auto;
+            height: auto;
+            width: 80%;
+            border: 2px dotted rebeccapurple;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: seashell;
+        }
+
+        h2 {
+            font-size: 0.8em;
+            padding: 5px 0px 9px 0px;
+        }
+
+        .borda {
+            border: 1px solid red;
+        }
+
+        .margem {
+            margin: 30px;
+        }
+
+        .remove-bullet {
+            list-style: none;
+        }
+
+        li {
+            width: 100%;
+            height: auto;
+            background-color: skyblue;
+            margin: 2px;
+        }
+
+        ol{
+            width:200px;
+            height:auto;
+            margin:30px;
+        }
+        div{
+            width:200px;
+            height:200px;
+            border-radius:100%;
+            background-color: springgreen;
+            margin:5px;
+            display:inline-block
+        }
+        a{
+            width:100%;
+            height:20px;
+            border:1px solid black;
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>LISTA DESORDENADA</h2>
+        <ul class="borda margem remove-bullet">
+            <li>asdasd</li>
+            <li>as</li>
+            <li>asdasdasd</dli>
+            <li>asasdasd</li>
+            <li><a href="#">Clique aqui</a></li>
+        </ul>
+
+        <h2>LISTA ORDENADA</h2>
+        <ol class="margem" type="1">
+            <li>asdasd</li>
+            <li>as</li>
+            <li>asdasdasd</dli>
+            <li>asasdasd</li>
+            <li><a href="#">Clique aqui</a></li>
+        </ol>
+
+        <h2>LISTA POR DEFINIÇÃO</h2>
+        <dl>
+            <dt><strong>Fiat</strong></dt>
+            <dd>Tempra</dd>
+            <dd>uno</dd>
+            <dt style="color:red;"><strong>VW</strong></dt>
+            <dd>Gol</dd>
+            <dd>Fusca</dd>
+        </dl>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </main>
+</body>
+
+</html>

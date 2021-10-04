@@ -1,0 +1,22 @@
+Exercicio 29
+
+1. Qual a diferença da unidade de medida em e rem?
+2. Como é criada uma variável no CSS? Dê um exemplo. 
+
+Quest 1- R: A diferença entre a unidade de medida 'em' e 'rem' é o elemento na qualquer
+eles possuem herança, ou seja, 1 'em' herda a unidade de media do elemento que ele está 
+inserido, seu pai. Já o 'rem' possui herança do html root, que é o mais alto nível. Portanto
+essas medidas rem e em multiplicam o valor declarado de um font-size, por exemplo,
+pelo seus elementos pais.
+
+
+Quest 2- R: Para criar uma variável no CSS primeiro precisamos declarar ela no seletor :root
+ex:
+:root{
+    --minha_variavel: black;
+}
+e para usar:
+#minhaDiv{
+    background-color:var(--minha_variavel)
+}
+

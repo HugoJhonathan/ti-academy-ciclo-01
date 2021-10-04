@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+:root{
+    --cor_de_fonte: red;
+    --cor_background_padrao: yellow;
+    scroll-behavior: smooth;
+}
+
+#header-top{
+    width:100%;
+    height:80px;
+    background-color:rgb(255,179,0)
+}
+main{
+    width:80%;
+    height:auto;
+    margin:0 auto;
+}
+article, p{
+    width:100%;
+    height:auto;
+}
+p{
+    padding:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    line-height: 32px;
+}
+article #article_header{
+    padding:10px;
+    height:auto;
+    width:100%;
+    border-bottom:1px solid black;
+}
+article > #article_header > h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:22px;
+}
+
+nav#menu{
+    width:80%;
+    height:auto;
+    padding:10px;
+    margin:0 auto;
+    /* background-color: black; */
+}
+
+nav#menu > .item_menu{
+    text-decoration: none;
+    color:#fff;
+    padding:10px;
+}
+nav#menu > .item_menu:hover{
+    color:red;
+    background-color: #000;
+}
+
+main > #receitas{
+    background-color: var(--cor_background_padrao);
+    width:100%;
+    height:600px;
+}

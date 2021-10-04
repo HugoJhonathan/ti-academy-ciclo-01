@@ -1,0 +1,15 @@
+Exercicio 23
+
+1. Dê uma definição para o elemento HTML <body>.
+2. É correto dizer que por padrão o todos os elementos HTML possuem uma definição
+de margin e padding?
+3. Uma tag <figure> pode conter várias tags <figurecaption>
+
+Quest 1- R: <body> é o corpo da nossa página, ou seja, é tudo que será exibido,
+incluindo cabeçalho, conteudo principal, rodapé, etc.
+
+Quest 2- R: Não, nem todos elementos possuem margin e padding por padrão, somente
+alguns, como títulos.
+
+Quest 3- R: Não, uma tag <figure> pode conter apenas um <figcaption>, pois o 
+figcaption é a "legenda" da imagem em questão.

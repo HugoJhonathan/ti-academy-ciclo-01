@@ -1,0 +1,58 @@
+Exercício 19
+
+1. Qual é a tag semântica que servirá de contêiner para as tags de parágrafo <p>?
+2. Uma tag de parágrafo pode ser substituída por uma tag <div> principalmente para
+conter textos longos?
+
+Quest. 1- R: A tag semântica que servirá de container para o paragrafo <p>
+É o <article>
+
+Quest. 2- R: Não devemos usar div para conter textos longos, pois
+existem tags semânticas mais bem estruturadas que
+será essencial para buscadores, como o Google, identificar
+certos tipos de conteudos que tem no site.
+
+Exercício 20
+
+1. Qual a propriedade CSS que permite aplicar um ‘degradê’ em um elemento HTML?
+De um exemplo.
+2. Por padrão, é recomendado que a aplicação do CSS seja na forma inline ou mesmo
+no próprio corpo do código html.
+3. Qual a diferença básica entre a unidade de medida pixel (px) e a unidade em
+percentual (%)?
+
+Quest. 1- R: A propriedade CSS que permite aplicar um degradê é o
+background: linear-gradient ou radial-gradient
+
+Quest. 2- R: Por padrão, o mais recomendado é aplicar o CSS
+estando em um arquivo separado, acessando essas propriedades
+atraves da tag link e especificando o caminho onde ele está.
+
+Quest. 3- R: A unidade de medida px (pixel) é uma unidade de 
+medida fixa, ela sempre exibirá o tamanho definido, e não se
+adaptará ao conteudo e nem ao tamanho da tela, portanto nem sempre
+devemos utiliza-la. Já a unidade em percentual é totalmente
+relativo ao tamanho onde ela está inserida, por exemplo, se 
+colocar-mos uma div com largura de 50%, e exibir em um monitor
+1920px de largura, essa div terá 960px, e se for em uma tela
+menor, como 1366px, será de 683px. Cada unidade de medida tem
+seu uso específico, então temos que saber bem quando aplicar Cada
+uma delas.
+
+Exercício 21  
+
+1. É verdade que todo arquivo CSS precisa estar dentro de outra pasta para que o
+navegador possa renderizar os estilos das propriedades CSS?
+2. É verdade que todo elemento HTML possui por padrão elementos filhos?
+3. O que é o viewport? 
+
+Quest. 1- R: Não é verdade, o navegador renderiza o CSS estando
+em qualquer lugar dentro da pasta do projeto, assim só precisamos
+referenciar o local correto dele.
+
+Quest 2- R: Não é verdade, alguns elementos podem sim ter elemento filho, 
+mas nem todos, por exemplo, podemos criar uma div vazia, sem nada dentro,
+ela será filha de outro elemento, mas ela mesmo não terá nenhum elemento filho.
+
+Quest 3- Viewport é a área que o navegador dedica para exibição dos sites, ou seja
+é o espaço em branco que temos para criação de nossas aplicações

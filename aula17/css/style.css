@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --cor-background-body: rgb(236,239,241);
+}
+
+body{
+    background-color: var(--cor-background-body);
+}
+
+div#forma{
+    margin:50px auto;
+    width:100px;
+    height:100px;
+    background-color: chocolate;
+    border:1px solid #000;
+    padding:9px;
+    box-shadow: 0 0 10px #000;
+}
+
+div#forma > #interna{
+    width:80px;
+    height:80px;
+    border:1px solid red;
+    background-color: var(--cor-background-body);
+    border-radius:40px;
+}
