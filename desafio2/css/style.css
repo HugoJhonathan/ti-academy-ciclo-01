@@ -105,7 +105,7 @@ main #box #form-endedeco>input[type="text"]:focus {
 }
 
 main #box #form-endedeco>input[type="submit"] {
-    background-color: #2196f3;
+    background-color: #3D5AFE;
     border: none;
     border-radius: 5px;
     border-bottom: 2px solid #0549a3;
