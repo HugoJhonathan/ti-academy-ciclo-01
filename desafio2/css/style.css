@@ -5,7 +5,10 @@
 }
 
  :root {
-    --font-principal: Verdana;
+    --font-principal: 'Verdana', 'Arial', sans-serif;
+    --cor-azul-claro: #2196F3;
+    --cor-azul-medio: #3D5AFE;
+    --cor-azul-escuro: #0D47A1;
 }
 
 .flex {
@@ -25,7 +28,7 @@ body {
 }
 
 header#header-top {
-    background: linear-gradient(to right, #3865fc, #2390f3);
+    background: linear-gradient(to right, var(--cor-azul-medio), var(--cor-azul-claro));
     width: 100%;
     display: flex;
     justify-content: center;
@@ -46,8 +49,8 @@ header#header-top h2 {
 }
 
 header#header-top>#icone {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-color: #fff;
     border-radius: 100px;
     position: absolute;
@@ -59,8 +62,8 @@ header#header-top>#icone {
 }
 
 header#header-top>#icone .material-icons {
-    color: #2295f0;
-    font-size: 1em;
+    color: var(--cor-azul-claro);
+    font-size: 64px;
 }
 
 main {
@@ -75,7 +78,6 @@ main #box {
     width: 350px;
     height: auto;
     background-color: #fff;
-    box-shadow: 0 0 6px #cacaca;
     border-radius: 5px;
     padding: 15px;
 }
@@ -101,14 +103,17 @@ main #box #form-endedeco>input[type="text"] {
 }
 
 main #box #form-endedeco>input[type="text"]:focus {
-    border: 1px solid #2196f3;
+    border: 2px solid #000;
 }
 
 main #box #form-endedeco>input[type="submit"] {
-    background-color: #3D5AFE;
+    background-color: var(--cor-azul-claro);
+    font-family: var(--font-padrao);
+    font-size: 0.8rem;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
-    border-bottom: 2px solid #0549a3;
+    border-bottom: 3px solid var(--cor-azul-escuro);
     color: #fff;
     padding: 10px;
     margin-top: 10px;
@@ -130,9 +135,12 @@ main #box #form-endedeco>input[type="submit"]:active {
         grid-template-rows: 120px 1fr;
     }
     header#header-top>#icone {
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
         bottom: -35px;
         font-size: 60px;
+    }
+    header#header-top>#icone .material-icons {
+        font-size: 50px;
     }
 }

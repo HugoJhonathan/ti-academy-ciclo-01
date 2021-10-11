@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Google Sans";
+    src: url("GoogleSans-Regular.ttf");
+}
+
+:root {
+    --cinza-medio: #3c3f42;
+    --cinza-escuro: #202124;
+    --font-padrao: 'Google Sans', Roboto, Arial, sans-serif;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100%;
+}
+
+body {
+    background-color: var(--cinza-escuro);
+    display: grid;
+    grid-template-rows: 0px calc(100% - 80px) 80px;
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-padrao);
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+
+main .box-pessoas {
+    display: flex;
+    height: 1fr;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #202124;
+}
+
+main .box-pessoas .pessoas {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .box-chat {
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+}
+
+main .box-chat .chat {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: var(--font-padrao);
+}
+
+main .box-pessoas .box {
+    width: 250px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--cinza-medio);
+    margin: 10px 5px;
+}
+
+main .box-pessoas .box .superior {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main .box-pessoas .box .superior .mic {
+    background-color: #333639;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 100%;
+    color: #fff;
+}
+
+main .box-pessoas .box .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(avatar.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+main .box-pessoas .box .inferior {
+    width: 100%;
+    height: 40px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0px 15px;
+}
+
+main .box-pessoas .box .inferior .nome {
+    color: #fff;
+    font-family: var(--font-padrao);
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+@media screen and (max-width:800px) {
+    main .pessoas .box {
+        flex-direction: column;
+    }
+}

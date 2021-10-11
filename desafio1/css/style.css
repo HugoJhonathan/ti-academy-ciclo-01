@@ -8,7 +8,7 @@
 :root {
     --background-color-dark: #212121;
     --background-color-orange: #f9a825;
-    --font-padrao: Helvetica;
+    --font-padrao: 'Helvetica', 'Arial', sans-serif;
     font-size: 100%;
 }
 
@@ -58,6 +58,11 @@ header .header_center .logo {
     color: #fff;
     font-size: 1rem;
     height: 100%;
+}
+
+header .header_center .logo a {
+    color: #fff;
+    text-decoration: none;
 }
 
 header .header_center #menu {
@@ -138,6 +143,7 @@ main #box-principal #box-frase {
 main #box-principal #box-frase p {
     background-color: #f0f0f0;
     font-family: var(--font-padrao);
+    color: #000;
     font-size: 1.2rem;
     margin: 0px;
     padding: 10px;
@@ -151,6 +157,17 @@ main #box-principal #box-email {
     align-items: center;
     justify-content: center;
     padding: 15px;
+    flex-direction: column;
+    position: relative;
+}
+
+main #box-principal #box-email .txtNewsletter {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: var(--font-padrao);
+    color: #000;
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 main #box-principal #box-email form {
@@ -192,6 +209,7 @@ main #box-principal #box-email #box-btn-submit #btn-submit {
     background-color: var(--background-color-orange);
     color: var(--background-color-dark);
     font-weight: bold;
+    font-family: var(--font-padrao);
     align-items: center;
     justify-content: center;
     border: none;
@@ -208,6 +226,7 @@ main #box-principal #box-email #box-btn-submit #btn-submit .material-icons {
 
 footer {
     background-color: var(--background-color-dark);
+    font-family: var(--font-padrao);
     color: #fff;
     display: flex;
     align-items: center;
@@ -215,9 +234,9 @@ footer {
     width: 100vw;
 }
 
-footer h2 {
+footer .by {
     font-family: var(--font-padrao);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .mobile-menu-show {

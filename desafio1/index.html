@@ -10,17 +10,19 @@
     <title>Desafio 1</title>
 </head>
 <script>
-    function showSideMenu(x) {
-        document.getElementById("list-menu").classList.toggle('mobile-menu-show');
-        let txtButtonSide = document.getElementById("open-mobile-menu").innerText;
-        x.innerText = txtButtonSide == 'menu' ? 'close' : 'menu';
+    window.onload = function() {
+        let btnMenu = document.querySelector("#open-mobile-menu");
+        btnMenu.addEventListener('click', function() {
+            document.querySelector("#list-menu").classList.toggle('mobile-menu-show');
+            this.innerText = this.innerText === 'menu' ? 'close' : 'menu';
+        });
     }
 </script>
 
 <body>
     <header>
         <div class="header_center">
-            <bold class="logo">LOGO</bold>
+            <div class="logo"><a href="#">LOGO</a></div>
 
             <nav id="menu" class="flex">
 
@@ -36,7 +38,7 @@
                     </li>
                 </ul>
 
-                <span id="open-mobile-menu" class="material-icons flex" onclick="showSideMenu(this)">
+                <span id="open-mobile-menu" class="material-icons flex">
                     menu
                     </span>
             </nav>
@@ -51,7 +53,11 @@
                 </p>
             </div>
             <div id="box-email" class="flex">
-                <form action="" method="POST">
+
+                <div class="txtNewsletter">
+                    Digite seu e-mail para receber nossa <strong>newsletter</strong>! &#128515;
+                </div>
+                <form action="" method="get">
                     <label for="email">
                     <input required autocomplete="off" placeholder="Digite seu e-mail" type="email" name="email" id="email">
                 </label>
@@ -68,7 +74,9 @@
         </section>
     </main>
     <footer>
-        <h2>by TI-ACADEMY</h2>
+        <div class="by">
+            <strong>by TI-ACADEMY</strong>
+        </div>
     </footer>
 
 </body>
